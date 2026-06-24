@@ -1,16 +1,26 @@
+import java.util.Scanner;
+
 public class countStarAndHash {
-    String str="*#*#*#";
-    count1=0;
-    count2=0;
+
+
+    public static void main(String[] args) {
+        Scanner sc= new Scanner(System.in);
+    String str= sc.next();
+    int star= 0;
+    int hash= 0;
     for(int i=0;i<str.length();i++){
         if(str.charAt(i)=='*'){
-            count1++;
+            star++;
         }
-        else{
-            count2++;
+        else if(str.charAt(i)=='#'){
+            hash++;
         }
-        System.out.println(count1-count2);
     }
+    System.out.println(star-hash);
+    }
+}
+
     
 
-}
+
+
