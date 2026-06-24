@@ -9,11 +9,9 @@ public class cipher {
             }
             else{
                 char ch=s.charAt(i);
-            int ASCII=ch+key;
+            int ASCII=ch+(key%26);
             System.out.print((char)ASCII);
-            }
-            
-            
+            }           
         }
     }
 }
